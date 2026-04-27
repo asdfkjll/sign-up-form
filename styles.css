@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("fonts/SpaceGrotesk-VariableFont_wght.ttf");
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Space Grotesk", serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.left {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+	url("images/nasa-w9sZL_hvNug-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+}
+
+.sign-up-form__title {
+    text-align: center;
+}
+
+.sign-up-form__fullname {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sign-up-form__fullname .sign-up-form__group {
+    width: calc(50% - 15px);
+}
+
+.sign-up-form__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-form__group label {
+    text-transform: capitalize;
+}
+
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.sign-up-form__group input[type="text"], 
+.sign-up-form__group input[type="email"], 
+.sign-up-form__group input[type="password"], 
+.sign-up-form__group input[type="tel"] 
+{
+    background-color: #eee;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 15px;
+    transition: .15s;
+}
+
+.sign-up-form__group input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.sign-up-form__group input:user-invalid {
+    border-color: #f63b3b;
+    box-shadow: 0 0 0 3px rgba(246, 59, 59, 0.2);
+}
+
+.sign-up-form__button {
+    background-color: #111;
+    color: white;
+    font-weight: 700;
+    border: 1px solid #eee;
+    border-radius: 35px;
+    padding: 20px 15px;
+    margin: 15px 0;
+    transition: .15s;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #111;
+    width: 50%;
+}
+
+.sign-up-form__button:hover {
+    background-color: #222;
+}
