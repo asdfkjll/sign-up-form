@@ -27,7 +27,6 @@ body {
     color: grey;
 }
 
-
 .quote__author::before {
     content: "-";
     margin-right: 5px;
@@ -144,4 +143,41 @@ input, textarea, button, select {
 
 .sign-up-form__button:hover {
     background-color: #222;
+}
+
+@media (max-width: 1199px) {
+    .container {
+	display: unset;
+	height: auto;
+    }
+
+    .left {
+	height: 300px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .right {
+	padding: 80px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .sign-up-form__fullname {
+	flex-direction: column;
+	justify-content: start;
+	gap: 15px;
+    }
+
+    .sign-up-form__fullname .sign-up-form__group {
+	width: 100%;
+    }
+
+    .sign-up-form__button {
+	width: 100%;
+    }
+
+    .log-in {
+	text-align: center;
+    }
 }
