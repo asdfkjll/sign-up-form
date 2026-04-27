@@ -10,6 +10,33 @@ body {
     font-family: "Space Grotesk", serif;
 }
 
+.required {
+    color: #f63b3b;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.quote__author {
+    color: grey;
+}
+
+
+.quote__author::before {
+    content: "-";
+    margin-right: 5px;
+}
+
+.img-credits {
+    opacity: .7;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -27,6 +54,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .right {
@@ -47,7 +75,9 @@ body {
 }
 
 .sign-up-form__title {
+    font-weight: 700;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .sign-up-form__fullname {

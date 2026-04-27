@@ -12,11 +12,11 @@
 <body>
     <div class="container">
 	<div class="left">
-	    <p>
+	    <p class="quote">
 		"The cosmos is within us. We are made of star-stuff."
-		<span class="author">Carl Sagan</span>
+		<span class="quote__author">Carl Sagan</span>
 	    </p>
-	    <p>
+	    <p class="img-credits">
 		Photo by NASA on Unsplash 
 	    </p>
 	</div>
@@ -26,34 +26,34 @@
 
 		<section class="sign-up-form__fullname">
 		    <div class="sign-up-form__group">
-			<label for="first-name">First name</label>
+			<label for="first-name">First name <span class="required">*</span></label>
 			<input type="text" id="first-name" name="first-name" placeholder="John" required>
 		    </div>
 
 		    <div class="sign-up-form__group">
-			<label for="last-name">Last name</label>
+			<label for="last-name">Last name <span class="required">*</span></label>
 			<input type="text" id="last-name" name="last-name" placeholder="Cock" required>
 		    </div>
 		</section>
 
 
 		<div class="sign-up-form__group">
-		    <label for="email">Email</label>
+		    <label for="email">Email <span class="required">*</span></label>
 		    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
 		</div>
 
 		<div class="sign-up-form__group">
-		    <label for="phone">Phone number</label>
+		    <label for="phone">Phone number <span class="required">*</span></label>
 		    <input type="tel" id="phone" name="phone" placeholder="0000-000000" equired>
 		</div>
 
 		<div class="sign-up-form__group">
-		    <label for="password">Password</label>
+		    <label for="password">Password <span class="required">*</span></label>
 		    <input type="password" id="password" name="password" placeholder="password" required>
 		</div>
 
 		<div class="sign-up-form__group">
-		    <label for="confirm-password">Confirm password</label>
+		    <label for="confirm-password">Confirm password <span class="required">*</span></label>
 		    <input type="password" id="confirm-password" name="confirm-password" placeholder="password" required>
 		</div>
 
